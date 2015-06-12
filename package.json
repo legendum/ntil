@@ -1,0 +1,24 @@
+{
+  "name": "ntil",
+  "version": "1.2.1",
+  "description": "create a handler to call a function until the result is good",
+  "main": "ntil.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/legendum/ntil.git"
+  },
+  "keywords": [
+    "async",
+    "until",
+    "retry"
+  ],
+  "author": "Kevin Hutchinson",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/legendum/ntil/issues"
+  },
+  "homepage": "https://github.com/legendum/ntil"
+}
