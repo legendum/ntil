@@ -42,7 +42,7 @@
  *
  * ntil() will return a handler that may be called with any number of arguments.
  * The performer function will receive these arguments, with a final "next" arg
- * appended to the argument list, such that next should be called on completion,
+ * appended to the argument list, such that it should be called on completion,
  * passing the result (as a single argument *or* multiple arguments) thus:
  *
  * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -87,7 +87,7 @@
  * is named. An alternative is to use the "name" option (see below).
  *
  * The "checker" function checks that the result is 3, causing the first handler
- * to succeed and the second handler to fail (it has a result of 2, not 3).
+ * to fail (it has a result of 2, not 3) and the second handler to succeed.
  *
  * The output from both these examples is:
  *

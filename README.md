@@ -20,7 +20,12 @@ your function can do something useful over the network without blocking.
 You provide a "check" function to return ```true``` when your function delivers
 results that pass your post-conditions. You may also optionally provide "done"
 and "fail" callback functions to handle the results of your function call.
-Please see the two examples below for a clear demonstration how this works.
+Please see the examples below to understand how it works.
+
+
+## Installing "ntil"
+
+```npm install --save ntil```
 
 
 ## Using "ntil"
@@ -37,7 +42,7 @@ This package provides a single method "ntil()" which is called thus:
 
 ntil() will return a handler that may be called with any number of arguments.
 The performer function will receive these arguments, with a final "next" arg
-appended to the argument list, such that next should be called on completion,
+appended to the argument list, such that it should be called on completion,
 passing the result (as a single argument *or* multiple arguments) thus:
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -82,7 +87,7 @@ Note that the logger includes "myFunc" in log messages, because the function
 is named. An alternative is to use the "name" option (see below).
 
 The "checker" function checks that the result is 3, causing the first handler
-to succeed and the second handler to fail (it has a result of 2, not 3).
+to fail (it has a result of 2, not 3) and the second handler to succeed.
 
 The output from both these examples is:
 
